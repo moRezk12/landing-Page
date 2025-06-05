@@ -1,0 +1,53 @@
+<section id="products" class="bg-[#F9fafb]" >
+  <div class="container">
+    <div class="title">
+      <h2 class="text-[25px] leading-8 md:text-[40px] md:leading-10 font-bold">
+        {{ 'landing.OUR_PRODUCTS.TITLE' | translate }}
+      </h2>
+      <p class="mt-[30px] w-full md::w-[80%] lg:w-[60%]  mx-auto ">
+                {{ 'landing.OUR_PRODUCTS.DESCRIPTION' | translate }}
+
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[40px]">
+      <div
+      *ngFor="let img of images"
+      class="card bg-white relative border rounded-[16px] shadow-md p-[30px] ">
+        <div class="w-fit   absolute top-[10px]   "
+          [ngClass]="{
+            'right-[10px]': !isRtl(),
+            'left-[10px]': isRtl()
+          }"
+        >
+          <div class="rounded-full shadow-lg  mb-[5px] " >
+            <i class="far fa-heart block  p-2  text-[#1F2937] text-[16px] leading-[24px] font-semibold" ></i>
+          </div>
+          <div class="rounded-full shadow-lg " >
+            <i class="fas fa-eye block  p-2 text-[#1F2937] text-[16px] leading-[24px] font-semibold" ></i>
+          </div>
+        </div>
+        <div class="  mx-auto flex flex-col justify-center items-center rounded-full ">
+          <img class="max-w-[272px] max-h-[272px] " src="{{img.image}}" alt="img">
+        </div>
+        <div class="card-body  ">
+          <h5 class="my-[10px] text-[#1F2937] text-[20px] leading-[28px] font-semibold">
+            {{img.title}}
+          </h5>
+          <p class="card-text text-[#4B5563] text-[16px] leading-[24px] font-normal ">
+            {{img.description}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-[30px] " >
+      <!-- routerLink="/about" -->
+      <button  class="bg-[#D97706] text-white px-[30px] py-[15px] rounded-[8px] w-[70%] md:w-[28%] lg:w-[18%] mx-auto " >
+        {{ 'landing.OUR_PRODUCTS.BUTTON' | translate }}
+      </button>
+    </div>
+
+  </div>
+</section>

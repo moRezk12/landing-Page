@@ -1,0 +1,162 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "PRODUCTS": "Products",
+    "OUR_FEATURES": "Our Features",
+    "CONTACT": "Contact"
+  },
+  "landing" :{
+    "hero" : {
+      "TITLE": "Saad Al Khair Company - Original\nSpices... Quality with a\ntaste of the good old days",
+      "DESCRIPTION": "Experience the authentic flavors of premium spices, carefully selected and processed to preserve their natural essence.",
+      "ORDER_NOW": "Order Now",
+      "CONTACT_US": "Contact Us"
+    },
+    "ABOUT": {
+      "TITLE": "About Us",
+      "DESCRIPTION": "Saad Al Khair Foodstuff Retail Company is a Kuwaiti company with extensive experience in spices, legumes, herbs, nuts, natural oils, and food products. We are distinguished by our professional packaging that preserves product quality for long periods. We are committed to high quality to suit all tastes, and we sell our products wholesale, semi-wholesale, and retail.",
+      "CARDS": [
+        {
+          "TITLE": "All Types of Spices",
+          "TEXT": "We offer over 300 varieties of high-quality spices, herbs, legumes and natural oils imported from the best regions around the world."
+        },
+        {
+          "TITLE": "Premium Quality",
+          "TEXT": "Our products undergo strict quality checks to ensure the finest taste and health standards."
+        },
+        {
+          "TITLE": "Seasons Trusted Brand",
+          "TEXT": "Years of customer satisfaction and trust have made us a reliable name in the spice market."
+        }
+      ]
+    },
+    "OUR_PRODUCTS": {
+      "TITLE": "Our Products",
+      "DESCRIPTION": "Discover our premium selection of spices and blends, carefully sourced and processed to ensure the highest quality.",
+      "products": [
+        {
+          "title": "Meat and vegetable soup",
+          "description": "A balanced blend of Arabic flavors, including a variety of soups."
+        },
+        {
+          "title": "Coriander Seeds ",
+          "description": "Delicious aroma and distinctive taste. Available in packages: 100g, 250g, 500g, and 1kg "
+        },
+        {
+          "title": "Dried roses ",
+          "description": "Natural dried rose with a fragrant scent, ideal for decoration or use in herbalism. "
+        },
+        {
+          "title": " Ginger powder",
+          "description": "Helps boost immunity and digestion Used in cooking and hot drinks "
+        },
+        {
+          "title": "Cardamom Medium  ",
+          "description": "Strong flavor and aroma Ideal for Arabic coffee, cooking, and desserts "
+        },
+        {
+          "title": " Crushed biryani spices",
+          "description": "A premium blend of authentic spices Grounded and ready for immediate use "
+        }
+      ],
+      "BUTTON": "View All Products"
+    },
+    "WHAT_US": {
+      "TITLE": "What Distinguishes Us",
+      "DESCRIPTION": "We pride ourselves on our commitment to quality and traditional methods that preserve the authentic flavor of our spices.",
+      "product": [
+        {
+          "title": "Steam Washing Spices",
+          "description": "Our spices undergo a meticulous steam washing process to remove impurities while preserving their natural flavor and aroma. "
+        },
+        {
+          "title": "Manual Roasting for Flavor",
+          "description": "We roast our spices by hand using traditional methods to enhance their flavors and aromatic profiles. "
+        },
+        {
+          "title": "Product Grinding First",
+          "description": "Our spices are ground immediately after roasting to capture their peak flavor and aroma. "
+        },
+        {
+          "title": "Various Package Sizes",
+          "description": "We offer over 300 varieties of our products in a range of packaging sizes to meet different customer needs and preferences, ranging from 100 grams to 1000 grams, depending on the consumer's preference. "
+        },
+        {
+          "title": "High Quality Standards",
+          "description": "We maintain strict quality control and hygiene standards throughout our production process. "
+        },
+        {
+          "title": "Passion for Tradition",
+          "description": "We are passionate about preserving traditional spice preparation methods that have been passed down through generations. "
+        }
+      ]
+    },
+    "CUSTOMER_REVIEWS": {
+      "TITLE": "Customer Reviews",
+      "DESCRIPTION": "Hear what our customers have to say about their experience with our products.",
+      "product":[
+        {
+          "description": "The quality of Saad Al Khair spices is exceptional. Their kabsa mix has changed the way I cook, adding authentic Middle Eastern flavors to my kitchen. I highly recommend it!",
+          "name": "Mohammed Al-Harbi",
+          "role": "Regular Customer"
+        },
+        {
+          "description": "As a restaurant owner, I've tried many spice suppliers, but Saad Al Khair stands out for its consistency and unparalleled freshness. Their steam-washed spices have a pure, clean flavor that my customers notice and appreciate.",
+          "name": "Fatima Al-Qasimi",
+          "role": "Restaurant Owner"
+        },
+        {
+          "description": "The packaging is excellent and keeps the spices fresh for a long time. I appreciate the different size options available. Their turmeric is the most vibrant I've ever tasted!",
+          "name": "Ahmad Nasser",
+          "role": "Home Chef"
+        }
+      ]
+    },
+    "CONTACT_US": {
+      "TITLE": "Contact Us",
+      "DESCRIPTION": "Hear what our customers have to say about their experience with our products.",
+      "FORM": {
+        "TITLE": "Send Us a Message",
+        "nameLabel": "Full Name",
+        "NAME": "Enter Your Name",
+        "phoneLabel": "Phone Number",
+        "PHONE": "Enter Your Phone Number",
+        "messageLabel": "Message",
+        "MESSAGE": "Enter Your Message",
+        "SEND": "Send"
+      },
+      "info" :{
+        "TITLE": "Contact Information",
+        "WhatsApp": "WhatsApp",
+        "AVAILABILITY": "Available 9am–6pm (Kuwait time)",
+        "ADDRESS": "Address",
+        "EMAIL": "Email",
+        "followUs": "Follow Us"
+      }
+    }
+  },
+  "footer" : {
+    "title": "Saad Al Khair - A Kuwaiti company specializing in premium quality spices and food products since 2000.",
+    "title2" : {
+      "title" : "Quick Links",
+      "desc" : "Home",
+      "desc2" : "About Us",
+      "desc3" : "Products",
+      "desc4" : "Our Features",
+      "desc5" : "Contact Us"
+    },
+    "title3" : {
+      "title" : "Products",
+      "desc" : "Egyptian cumin",
+      "desc2" : "Ginger powder",
+      "desc3" : "Coriander love",
+      "desc4" : "Medium cardamom",
+      "desc5" : "Meat and vegetable soup"
+    },
+    "title4" : {
+      "title" : "Contact",
+      "desc" : "Kuwait, Shuwaikh Industrial 3, Block D, Plot No. 162, Shop No. 1"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<section class="bg-[#F9fafb]" >
+  <div class="container">
+    <div [class.rtl]="currentLang === 'ar'" [class.ltr]="currentLang === 'en'" >
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let img of images">
+          <div class=" px-[15px]  ">
+            <img class=" h-[450px] rounded-[20px]  " src="{{img}}" alt="img">
+          </div>
+        </ng-template>
+
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+
+<!-- <section  >
+  <div class="container">
+    <div class="flex flex-col md:flex-row justify-between items-center ">
+      <div class="info w-full md:w-[45%]   ">
+        <p class="text-[18px] leading-[25px] text-center  md:text-[35px] font-medium md:leading-[50px]">
+          A distinctive package for all products that meets all consumer needs.
+          Starting from 100 grams to one kilogram.
+        </p>
+      </div>
+      <div class="image w-full md:w-[45%]">
+        <img class="w-[500px] h-[400px] rounded-[20px] " src="assets/Images/landingPage/collectProduct/Frame 645.png"
+          alt="Image">
+      </div>
+    </div>
+
+  </div>
+</section> -->
+<!-- <section>
+  <div class="container">
+    <div class="flex flex-col md:flex-row justify-between items-center ">
+      <div class="image w-full md:w-[45%]">
+        <img class="w-[500px] h-[400px] " src="assets/Images/landingPage/collectProduct/Frame 644.png"
+          alt="Image">
+      </div>
+      <div class="info w-full md:w-[45%]   ">
+        <p class="text-[18px] leading-[25px] text-center  md:text-[35px] font-medium md:leading-[50px]">
+          A distinctive package for all products that meets all consumer needs.
+          Starting from 100 grams to one kilogram.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> -->

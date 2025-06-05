@@ -1,0 +1,29 @@
+<section id="about" class="bg-[#F9fafb]">
+  <div class="container">
+    <div class="title">
+      <h2 class="text-[25px] leading-8 md:text-[40px] md:leading-10 font-bold">
+        {{ 'landing.ABOUT.TITLE' | translate }}
+      </h2>
+      <p class="mt-[30px] w-full md::w-[80%] lg:w-[60%]  mx-auto ">
+        {{ 'landing.ABOUT.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[40px]">
+      <div *ngFor="let card of ['0', '1', '2']" class="card text-center border rounded-[16px] shadow-md p-[30px]">
+        <div class="bg-[#D977061A] mx-auto w-[64px] h-[64px] flex justify-center items-center rounded-full">
+          <img class="w-[24px] h-[24px]" [src]="'assets/Images/About/Icon (' + card + ').png'" alt="img" />
+        </div>
+        <div class="card-body">
+          <h5 class="my-[20px] text-[#1F2937] text-[20px] leading-[28px] font-semibold">
+            {{ 'landing.ABOUT.CARDS.' + card + '.TITLE' | translate }}
+          </h5>
+          <p class="card-text text-[#4B5563] text-[16px] leading-[24px] font-normal">
+            {{ 'landing.ABOUT.CARDS.' + card + '.TEXT' | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

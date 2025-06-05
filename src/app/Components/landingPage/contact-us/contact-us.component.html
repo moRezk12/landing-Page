@@ -1,0 +1,137 @@
+<section id="contact">
+  <div class="container">
+    <div class="title">
+      <h2 class="text-[25px] leading-8 md:text-[40px] md:leading-10 font-bold">
+        {{ 'landing.CONTACT_US.TITLE' | translate }}
+      </h2>
+      <p class="mt-[30px] w-full md::w-[80%] lg:w-[60%]  mx-auto ">
+        {{ 'landing.CONTACT_US.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2  gap-5 mt-[40px]">
+
+      <div class="border rounded-[16px] shadow-lg p-[20px]">
+        <h3 class="text-[#1F2937]  text-[24px] leading-[32px] font-semibold">
+          {{ 'landing.CONTACT_US.FORM.TITLE' | translate }}
+        </h3>
+
+        <div class="mt-[20px]">
+          <label for="" class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]   ">
+            {{ 'landing.CONTACT_US.FORM.nameLabel' | translate }}
+          </label>
+          <input type="text" placeholder="{{ 'landing.CONTACT_US.FORM.NAME' | translate }}"
+            class="w-full border text-[#9CA3AF] text-[16px]  rounded-[8px] p-[10px]">
+        </div>
+        <div class="mt-[20px]">
+          <label for="" class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]  ">
+            {{ 'landing.CONTACT_US.FORM.phoneLabel' | translate }}
+          </label>
+          <input type="number" placeholder="{{ 'landing.CONTACT_US.FORM.PHONE' | translate }}"
+            class="w-full border text-[#9CA3AF] text-[16px]  rounded-[8px] p-[10px]">
+        </div>
+        <div class="mt-[20px]">
+          <label for="" class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]">
+            {{ 'landing.CONTACT_US.FORM.messageLabel' | translate }}
+          </label>
+          <textarea placeholder="{{ 'landing.CONTACT_US.FORM.MESSAGE' | translate }} "
+            class="w-full border text-[#9CA3AF] text-[16px]  rounded-[8px] p-[10px]"></textarea>
+        </div>
+
+        <div>
+          <button
+            class="mt-[20px] px-[30px] bg-[#D97706] text-white text-[16px] leading-[24px] font-semibold py-[10px] rounded-[8px] ">
+            {{ 'landing.CONTACT_US.FORM.SEND' | translate }}
+          </button>
+        </div>
+
+      </div>
+
+      <div class="border rounded-[16px] shadow-lg p-[20px]">
+        <h3 class="text-[#1F2937]  text-[24px] leading-[32px] font-semibold">
+          {{ 'landing.CONTACT_US.info.TITLE' | translate }}
+
+        </h3>
+
+        <div class="mt-[20px] flex gap-3 ">
+          <div class="w-[40px] h-[40px] bg-[#D977061A] rounded-full ">
+            <img class=" w-full h-full p-[10px]  " src="assets/Images/landingPage/ContactUs/Icon (9).png" alt="img">
+          </div>
+          <div>
+            <h4 class="mb-[5px] text-[#1F2937]  text-[20px] leading-[28px] font-semibold">
+              {{ 'landing.CONTACT_US.info.WhatsApp' | translate }}
+            </h4>
+            <p class="text-[#4B5563] text-[16px] leading-[24px] ">
+              <span [ngClass]="{'rotate-0': isRtl(),'rotate-180': !isRtl()}"
+                style="direction: ltr; unicode-bidi: plaintext;">
+                +965 554 55192
+              </span>
+
+
+
+              <br>
+              {{ 'landing.CONTACT_US.info.AVAILABILITY' | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="mt-[20px] flex gap-3 ">
+          <div class="w-[40px] h-[40px] bg-[#D977061A] rounded-full ">
+            <img class=" w-full h-full p-[10px]  " src="assets/Images/landingPage/ContactUs/Icon (10).png" alt="img">
+          </div>
+          <div>
+            <h4 class="mb-[5px] text-[#1F2937]  text-[20px] leading-[28px] font-semibold">
+              {{ 'landing.CONTACT_US.info.ADDRESS' | translate }}
+            </h4>
+            <p class="text-[#4B5563] text-[16px] leading-[24px] ">
+              {{ 'footer.title4.desc' | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="mt-[20px] flex gap-3 ">
+          <div class="w-[40px] h-[40px] bg-[#D977061A] rounded-full ">
+            <img class=" w-full h-full p-[10px]  " src="assets/Images/landingPage/ContactUs/Icon (11).png" alt="img">
+          </div>
+          <div>
+            <h4 class="mb-[5px] text-[#1F2937]  text-[20px] leading-[28px] font-semibold">
+              {{ 'landing.CONTACT_US.info.EMAIL' | translate }}
+            </h4>
+            <p class="text-[#4B5563] text-[16px] leading-[24px] ">
+              saadalkhair1990&#64;gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="mt-[20px]">
+          <h3 class="text-[#1F2937]  text-[24px] leading-[32px] font-semibold">
+            {{ 'landing.CONTACT_US.info.followUs' | translate }}
+          </h3>
+          <div class="flex gap-[20px] mt-[20px] ">
+            <div class=" w-[60px] h-[60px] flex justify-center items-center  bg-[#F3F4F6] rounded-full">
+              <a href="https://www.instagram.com/saad.elkhair" target="_blank">
+                <i class="fab fa-instagram text-[#374151] text-xl  "></i>
+              </a>
+            </div>
+            <div class=" w-[60px] h-[60px] flex justify-center items-center  bg-[#F3F4F6] rounded-full">
+              <a href="https://www.facebook.com/profile.php?id=61552481159011&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook-f text-[#374151] text-xl  "></i>
+              </a>
+            </div>
+            <div class=" w-[60px] h-[60px] flex justify-center items-center  bg-[#F3F4F6] rounded-full">
+              <a href="https://x.com/khairsaada57740?s=11&t=HD9zcRCIjcCv0tszQ936Lw" target="_blank">
+                <i class="fab fa-x-twitter text-[#374151] text-xl  "></i>
+              </a>
+            </div>
+            <div class=" w-[60px] h-[60px] flex justify-center items-center  bg-[#F3F4F6] rounded-full">
+              <a href="https://www.tiktok.com/@user3258370748874?_t=ZS-8wxQinbYFqJ&_r=1" target="_blank">
+                <i class="fab fa-tiktok text-[#374151] text-xl  transition-colors duration-300"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

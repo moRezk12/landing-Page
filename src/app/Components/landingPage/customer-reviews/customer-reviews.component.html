@@ -1,0 +1,48 @@
+<section id="reviews">
+  <div class="container">
+    <div class="title">
+      <h2 class="text-[25px] leading-8 md:text-[40px] md:leading-10 font-bold ">
+        {{ 'landing.CUSTOMER_REVIEWS.TITLE' | translate }}
+      </h2>
+      <p class="mt-[30px] w-full md::w-[80%] lg:w-[60%]  mx-auto ">
+        {{ 'landing.CUSTOMER_REVIEWS.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[40px]">
+      <div
+      *ngFor="let item of images"
+      class="card  border rounded-[16px] shadow-md p-[30px] ">
+        <div class=" flex  items-center rounded-full ">
+          <i
+          *ngFor="let item of [1, 2, 3, 4, 5]"
+          class="fas fa-star text-[#FACC15]  "></i>
+
+        </div>
+        <div class="card-body my-[20px] ">
+          <p class="card-text text-[#4B5563] text-[16px] leading-[24px] font-normal ">
+            {{item.description}}
+          </p>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-[50px] h-[50px] rounded-full ">
+            <img class="w-full h-full object-cover rounded-full "
+              src="{{item.image}}" alt="img">
+          </div>
+          <div>
+            <h5 class="mb-[8px] text-[#1F2937] text-[20px] leading-[28px] font-semibold">
+              {{item.name}}
+            </h5>
+            <p class=" text-[#6B7280] text-[16px] leading-[24px] font-normal ">
+              {{item.role}}
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</section>

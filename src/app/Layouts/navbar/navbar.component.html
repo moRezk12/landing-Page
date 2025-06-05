@@ -1,0 +1,62 @@
+<header class="header bg-white fixed w-full left-0 right-0 top-0 z-[9999999]">
+  <div class="container flex justify-between items-center">
+    <div class="image">
+      <img class="w-[140px] h-[100px]" src="assets/Images/landingPage/navbar/logo 9-0١.png" alt="logo">
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="sm:flex justify-between items-center gap-4 hidden">
+      <li class="text-[#1F2937] cursor-pointer" *ngFor="let section of sections">
+        <a [href]="'#' + section.id" class=" text-[18px] lg:text-[23px] leading-[24px] font-medium"
+          [ngClass]="{ 'active': activeSection === section.id }" (click)="scrollToSection(section.id)">
+          {{ section.label }}
+        </a>
+      </li>
+      <li (click)="changeLanguage(currentLang === 'ar' ? 'en' : 'ar')"
+        class="bg-[#F3F4F6] text-[#1F2937] rounded-[10px] cursor-pointer w-fit px-2 py-1">
+        <i class="fas fa-globe mr-2"></i>
+        {{currentLang === 'ar' ? 'EN' : 'AR'}}
+      </li>
+    </ul>
+
+    <!-- Bars Icon -->
+    <a class="bars text-[30px] font-bold block sm:hidden" (click)="toggleMenu()">
+      <i class="fas fa-bars cursor-pointer"></i>
+    </a>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    class="fixed top-0 left-0 h-full w-2/3 bg-white shadow-lg z-[99999999] transform transition-transform duration-300 ease-in-out sm:hidden"
+    [ngClass]="{
+    'translate-x-0 left-0': menuOpen && !isRtl(),
+    '-translate-x-full left-0': !menuOpen && !isRtl(),
+    'translate-x-0 right-0': menuOpen && isRtl(),
+    'translate-x-full right-0': !menuOpen && isRtl()
+  }">
+    <!-- Close icon -->
+    <div class=" p-4" [ngClass]="{
+      'text-right': !isRtl(),
+      'text-left': isRtl()
+    }">
+
+      <i class="fas fa-times text-[24px] cursor-pointer" (click)="toggleMenu()"></i>
+    </div>
+
+    <ul class="flex flex-col gap-6 p-6">
+      <li class="text-[#1F2937] cursor-pointer" *ngFor="let section of sections">
+        <a [href]="'#' + section.id" class="text-[23px] font-medium"
+          [ngClass]="{ 'active': activeSection === section.id }" (click)="scrollToSection(section.id); closeMenu()">
+          {{ section.label }}
+        </a>
+      </li>
+      <li (click)="changeLanguage(currentLang === 'ar' ? 'en' : 'ar')"
+        class="bg-[#F3F4F6] text-[#1F2937] rounded-[10px] cursor-pointer w-fit px-2 py-1">
+        <i class="fas fa-globe mr-2"></i>
+        {{currentLang === 'ar' ? 'EN' : 'AR'}}
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- [ngClass]="{'left-0': !isRtl(),'right-0': isRtl()}" -->

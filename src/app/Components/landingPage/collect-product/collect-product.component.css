@@ -1,0 +1,10 @@
+::ng-deep .owl-theme .owl-nav [class*=owl-] {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 15px ;
+  background:#D97706;
+  /* color: #000; */
+  cursor: pointer;
+  border-radius: 10px;
+}
+

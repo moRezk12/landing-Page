@@ -1,0 +1,31 @@
+<section id="what-us">
+  <div class="container">
+    <div class="title">
+      <h2 class="text-[25px] leading-8 md:text-[40px] md:leading-10 font-bold ">
+        {{ 'landing.WHAT_US.TITLE' | translate }}
+      </h2>
+      <p class="mt-[30px] w-full md::w-[80%] lg:w-[60%]  mx-auto ">
+        {{ 'landing.WHAT_US.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[40px]">
+      <div
+      *ngFor="let item of images"
+      class="card  border rounded-[16px] shadow-md p-[30px] ">
+        <div class="bg-[#D977061A]   w-[64px] h-[64px] flex justify-center items-center rounded-full ">
+          <img class="w-[24px] h-[24px] " src="{{item.image}}" alt="img">
+        </div>
+        <div class="card-body  ">
+          <h5 class="my-[20px] text-[#1F2937] text-[20px] leading-[28px] font-semibold">
+            {{item.title}}
+          </h5>
+          <p class="card-text text-[#4B5563] text-[16px] leading-[24px] font-normal ">
+            {{item.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

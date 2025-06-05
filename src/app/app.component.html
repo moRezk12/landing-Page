@@ -1,0 +1,11 @@
+
+<div class="" >
+  <router-outlet></router-outlet>
+</div>
+
+
+  <button *ngIf="showScrollButton" id="scrollToTopButton"
+    class=" animate-bounce fixed bottom-16 right-12 z-[9999999999]  bg-[#D97706] text-white font-bold w-[40px] h-[40px] rounded-full"
+    (click)="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </button>
