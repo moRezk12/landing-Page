@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { CollectProductComponent } from './Components/landingPage/collect-product/collect-product.component';
 // Carousel
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FormsModule } from '@angular/forms';
 
 // Translate function
 export function HttpLoaderFactory(http: HttpClient) {
@@ -47,6 +49,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     // Carousel
     BrowserModule,

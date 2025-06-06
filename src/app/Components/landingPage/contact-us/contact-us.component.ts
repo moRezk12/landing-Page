@@ -7,8 +7,25 @@ import { Component } from '@angular/core';
 })
 export class ContactUsComponent {
 
-      isRtl(): boolean {
-      return document.documentElement.dir === 'rtl';
-    }
+  name = '';
+  phone = '';
+  message = '';
+
+  constructor(){
+    // console.log(this.name);
+    // console.log(this.phone);
+    // console.log(this.message);
+
+  }
+
+  isRtl(): boolean {
+    return document.documentElement.dir === 'rtl';
+  }
+
+  send(){
+    console.log(this.name);
+    console.log(this.phone);
+    console.log(this.message);
+  }
 
 }

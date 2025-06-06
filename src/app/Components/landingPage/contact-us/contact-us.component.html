@@ -16,34 +16,41 @@
           {{ 'landing.CONTACT_US.FORM.TITLE' | translate }}
         </h3>
 
-        <div class="mt-[20px]">
-          <label for="" class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]   ">
-            {{ 'landing.CONTACT_US.FORM.nameLabel' | translate }}
-          </label>
-          <input type="text" placeholder="{{ 'landing.CONTACT_US.FORM.NAME' | translate }}"
-            class="w-full border text-[#9CA3AF] text-[16px]  rounded-[8px] p-[10px]">
-        </div>
-        <div class="mt-[20px]">
-          <label for="" class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]  ">
-            {{ 'landing.CONTACT_US.FORM.phoneLabel' | translate }}
-          </label>
-          <input type="number" placeholder="{{ 'landing.CONTACT_US.FORM.PHONE' | translate }}"
-            class="w-full border text-[#9CA3AF] text-[16px]  rounded-[8px] p-[10px]">
-        </div>
-        <div class="mt-[20px]">
-          <label for="" class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]">
-            {{ 'landing.CONTACT_US.FORM.messageLabel' | translate }}
-          </label>
-          <textarea placeholder="{{ 'landing.CONTACT_US.FORM.MESSAGE' | translate }} "
-            class="w-full border text-[#9CA3AF] text-[16px]  rounded-[8px] p-[10px]"></textarea>
-        </div>
+        <form >
+          <input type="hidden" name="_captcha" value="false">
 
-        <div>
-          <button
-            class="mt-[20px] px-[30px] bg-[#D97706] text-white text-[16px] leading-[24px] font-semibold py-[10px] rounded-[8px] ">
-            {{ 'landing.CONTACT_US.FORM.SEND' | translate }}
-          </button>
-        </div>
+          <div class="mt-[20px]">
+            <label class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]">
+              {{ 'landing.CONTACT_US.FORM.nameLabel' | translate }}
+            </label>
+            <input type="text" name="name" placeholder="{{ 'landing.CONTACT_US.FORM.NAME' | translate }}"
+              class="w-full border text-[#000] text-[16px] rounded-[8px] p-[10px]" required>
+          </div>
+
+          <div class="mt-[20px]">
+            <label class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]">
+              {{ 'landing.CONTACT_US.FORM.phoneLabel' | translate }}
+            </label>
+            <input type="number" name="phone" placeholder="{{ 'landing.CONTACT_US.FORM.PHONE' | translate }}"
+              class="w-full border text-[#000] text-[16px] rounded-[8px] p-[10px]" required>
+          </div>
+
+          <div class="mt-[20px]">
+            <label class="block mb-[5px] text-[#374151] text-[16px] leading-[24px]">
+              {{ 'landing.CONTACT_US.FORM.messageLabel' | translate }}
+            </label>
+            <textarea name="message" placeholder="{{ 'landing.CONTACT_US.FORM.MESSAGE' | translate }}"
+              class="w-full border text-[#9CA3AF] text-[16px] rounded-[8px] p-[10px]" required></textarea>
+          </div>
+
+          <div>
+            <button
+              class="mt-[20px] px-[30px] bg-[#D97706] text-white text-[16px] leading-[24px] font-semibold py-[10px] rounded-[8px]">
+              {{ 'landing.CONTACT_US.FORM.SEND' | translate }}
+            </button>
+          </div>
+        </form>
+
 
       </div>
 
@@ -66,9 +73,6 @@
                 style="direction: ltr; unicode-bidi: plaintext;">
                 +965 554 55192
               </span>
-
-
-
               <br>
               {{ 'landing.CONTACT_US.info.AVAILABILITY' | translate }}
             </p>
