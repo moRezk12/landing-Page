@@ -1,6 +1,16 @@
 <section class="bg-[#F9fafb]" >
   <div class="container">
-    <div [class.rtl]="currentLang === 'ar'" [class.ltr]="currentLang === 'en'" >
+
+    <div class="title">
+      <h2 class="text-[25px] leading-8 md:text-[40px] md:leading-10 font-bold">
+        {{ 'landing.collectProduct.TITLE' | translate }}
+      </h2>
+      <p class="mt-[30px] w-full md::w-[80%] lg:w-[60%]  mx-auto ">
+        {{ 'landing.collectProduct.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="slider mt-[40px] " [class.rtl]="currentLang === 'ar'" [class.ltr]="currentLang === 'en'" >
       <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide *ngFor="let img of images">
           <div class=" px-[15px]  ">

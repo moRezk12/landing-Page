@@ -10,8 +10,13 @@
     "hero" : {
       "TITLE": "Saad Al Khair Company - Original\nSpices... Quality with a\ntaste of the good old days",
       "DESCRIPTION": "Experience the authentic flavors of premium spices, carefully selected and processed to preserve their natural essence.",
+      "desc" :"We are always present on Instagram to show everything new and we are present on WhatsApp to answer inquiries",
       "ORDER_NOW": "Order Now",
       "CONTACT_US": "Contact Us"
+    },
+    "collectProduct":{
+      "TITLE": "Ready for global export ",
+      "DESCRIPTION": " We are ready to export to any country in the world and we have more than 250 items ready and prepared for export"
     },
     "ABOUT": {
       "TITLE": "About Us",
